@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created:ce44715c-8c4e-446b-879c-ea9ebe0f09c8-->
+<!-- Weitere Informationen zum XML-Manifest für Office-Add-Ins finden Sie unter https://go.microsoft.com/fwlink/?linkid=2252563. -->
+<OfficeApp 
+          xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" 
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+          xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" 
+          xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
+          xsi:type="TaskPaneApp">
+
+
+  <!-- WICHTIG: Die ID muss eindeutig für Ihr Add-In sein. Wenn Sie dieses Manifest erneut verwenden, stellen Sie sicher, dass Sie diese ID in eine neue GUID ändern. -->
+  <Id>3ef022a8-766c-4578-8629-247b0db084e2</Id>
+
+  <Version>1.0.0.0</Version>
+  <ProviderName>Midnight-worker</ProviderName>
+  <DefaultLocale>de-DE</DefaultLocale>
+  <!-- Der Anzeigename Ihres Add-Ins. Er wird im Store und an verschiedenen Stellen in der Office-Benutzeroberfläche verwendet, z. B. im Dialogfeld "Add-Ins". -->
+  <DisplayName DefaultValue="Bare-Metal-Excel" />
+  <Description DefaultValue="Bare-Metal-Excel"/>
+  <!-- Das Symbol für Ihr Add-In. Es wird auf Installationsbildschirmen und im Dialogfeld "Add-Ins" verwendet. -->
+  <IconUrl DefaultValue="https://hackernight.de/baremetal/Images/AddinIcon.png" />
+
+
+  <Hosts>
+    <Host Name="Workbook" />
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://hackernight.de/baremetal/Home.html" />
+  </DefaultSettings>
+  <!-- Beendet die Integration im TaskPane-Modus.  -->
+
+  <Permissions>ReadWriteDocument</Permissions>
+ 
+</OfficeApp>
